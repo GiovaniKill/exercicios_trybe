@@ -6,3 +6,5 @@ Ferver agua
 Racionio logico
 Softskills
 HTML
+CSS
+React
