@@ -6,3 +6,4 @@ Ferver agua
 Racionio logico
 Softskills
 HTML
+SQL
