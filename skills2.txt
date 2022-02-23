@@ -7,6 +7,3 @@ Racionio logico
 Softskills
 HTML
 SQL
-CSS
-React
-
