@@ -1,0 +1,19 @@
+h1, p {
+    text-align: center;
+}
+
+li {
+    transition: 0.2s;
+}
+
+li:hover {
+    background-color: aqua;
+}
+
+li:active {
+    font-size: 30px;
+}
+
+ul, ol {
+    list-style: none;
+}
