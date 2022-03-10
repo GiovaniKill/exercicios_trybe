@@ -1,5 +1,5 @@
 //Insira um número que não termine em 0, 2, 4, 5, 6 ou 8
-let n = 100123456789;
+let n = 99999999977;
 let isPrime = true;
 
 let testeDiv3 = false;
