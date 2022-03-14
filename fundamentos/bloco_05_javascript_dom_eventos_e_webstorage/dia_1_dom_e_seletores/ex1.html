@@ -66,11 +66,17 @@
         document.getElementsByClassName('center-content')[0].style.backgroundColor = color;
       }
 
+      function changeH1(string){
+        document.getElementsByTagName('h1')[0].innerText = string;
+      }
+
       changePText('Me vejo, mais ou menos, dois anos mais velho.', 1);
 
       changeMainColor('rgb(76,164,109)');
 
-      changeCenterConterColor('white')
+      changeCenterConterColor('white');
+
+      changeH1('Exercício 5.1 - JavaScript');
     </script> 
   </body>
 </html>
