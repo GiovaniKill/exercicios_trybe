@@ -62,12 +62,20 @@
         document.getElementsByClassName('main-content')[0].style.backgroundColor = color;
       }
 
-      function changeCenterConterColor(color) {
+      function changeCenterConterColor(color){
         document.getElementsByClassName('center-content')[0].style.backgroundColor = color;
       }
 
       function changeH1(string){
         document.getElementsByTagName('h1')[0].innerText = string;
+      }
+
+      function changePToUppercase(){
+        let soPraOrganizar = document.getElementsByTagName('p');
+        for(let key of soPraOrganizar){
+          key.style.textTransform = 'uppercase'
+        }
+        
       }
 
       changePText('Me vejo, mais ou menos, dois anos mais velho.', 1);
@@ -77,6 +85,9 @@
       changeCenterConterColor('white');
 
       changeH1('Exercício 5.1 - JavaScript');
+
+      changePToUppercase();
+
     </script> 
   </body>
 </html>
