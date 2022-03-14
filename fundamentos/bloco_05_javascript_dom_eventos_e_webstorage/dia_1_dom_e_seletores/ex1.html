@@ -54,11 +54,17 @@
  Crie uma função que modifique todo o texto da tag <p> para maiúsculo.
  Crie uma função que exiba o conteúdo de todas as tags <p> no console.
         */
-       function changePText (string, index) {
+       function changePText(string, index){
          document.getElementsByTagName('p')[index].innerText = string;
        }
 
-       changePText ('Me vejo, mais ou menos, dois anos mais velho.', 1)
+       function changeSectionColor(color){
+        document.getElementsByClassName('main-content')[0].style.backgroundColor = color;
+       }
+
+       changePText('Me vejo, mais ou menos, dois anos mais velho.', 1);
+
+       changeSectionColor('rgb(76,164,109)');
     </script> 
   </body>
 </html>
