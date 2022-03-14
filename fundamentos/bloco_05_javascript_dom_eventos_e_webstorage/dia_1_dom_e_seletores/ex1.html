@@ -75,8 +75,16 @@
         for(let key of soPraOrganizar){
           key.style.textTransform = 'uppercase'
         }
-        
       }
+      
+      function exhbitPInConsole(){
+        let soPraOrganizar = document.getElementsByTagName('p');
+        for(let key of soPraOrganizar){
+          console.log(key.innerText)
+        }
+      }
+        
+      
 
       changePText('Me vejo, mais ou menos, dois anos mais velho.', 1);
 
@@ -88,6 +96,7 @@
 
       changePToUppercase();
 
+      exhbitPInConsole()
     </script> 
   </body>
 </html>
