@@ -136,6 +136,17 @@
       //Ex1-1
       h1.className = "title"
 
+      //Ex1-2
+      let mainChildren = main.children
+
+      for(index = 0; index < mainChildren.length; index += 1){
+          if(mainChildren[index].tagName == 'H3'){
+              mainChildren[index].className = "description"
+          }
+      }
+
+
+
     </script>
   </body>
 </html>
