@@ -101,6 +101,27 @@
       img.className = 'small-image'
 
       sectionLeft.appendChild(img);
+
+      //Ex8
+      let porExtenso = {
+          1: 'um',
+          2: 'dois',
+          3: 'três',
+          4: 'quatro',
+          5: 'cinco',
+          6: 'seis',
+          7: 'sete',
+          8: 'oito',
+          9: 'nove',
+          10: 'dez'
+      }
+      let ul = document.createElement('ul')
+      sectionRight.appendChild(ul)     
+      for(index = 1; index <= 10; index += 1) {
+          let li = document.createElement('li')
+          ul.appendChild(li)
+          li.innerText = porExtenso[index]
+      }
     </script>
   </body>
 </html>
