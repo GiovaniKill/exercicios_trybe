@@ -125,3 +125,13 @@ function createDaysOfTheWeek() {
     }  
     
     addMonthDaysListener();
+
+    //Ex7
+    function addTask(string){
+        let task = document.createElement('span')
+        let container = document.getElementsByClassName('my-tasks')[0]
+        task.innerText = string
+        container.appendChild(task)
+    }
+
+    addTask('Cozinhar');
