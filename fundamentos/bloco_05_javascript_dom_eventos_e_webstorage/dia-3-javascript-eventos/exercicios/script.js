@@ -185,3 +185,22 @@ function createDaysOfTheWeek() {
     }
 
     colorDay();
+
+    //Ex Bônus
+    function addAppointment(){
+        let input = document.getElementById('task-input')
+        let button = document.getElementById('btn-add')
+        let container = document.getElementsByClassName('task-list')[0]
+
+        button.addEventListener('click', function(event){
+            let newAppointment = document.createElement('div')
+            if(input.value == ""){
+                alert('O compromisso deve conter um nome')
+            }else{
+                newAppointment.innerText = input.value
+                container.appendChild(newAppointment)
+            }
+        })  
+    }
+
+    addAppointment()
