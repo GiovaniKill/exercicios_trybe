@@ -81,3 +81,30 @@ function createDaysOfTheWeek() {
 }
 
     createFridayButton('Sexta-feira');
+
+  //Ex5
+  function addFridayEventListener(){
+    let button = document.getElementById('btn-friday')
+    let status = false;
+    button.addEventListener('click', function(){
+        let list = document.getElementById('days').children
+        if(!status){
+          for(let day of list){
+              if(day.classList.contains('friday')){
+              day.style.backgroundColor = "lightblue"
+              }
+          }
+          status = true;
+        }else{
+          for(let day of list){
+              if(day.classList.contains('friday')){
+              day.style.backgroundColor = "rgb(238,238,238)"
+              }
+          }
+          status = false;
+        }
+        
+    })
+}
+
+    addFridayEventListener();
