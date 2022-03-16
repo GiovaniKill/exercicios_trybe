@@ -135,3 +135,14 @@ function createDaysOfTheWeek() {
     }
 
     addTask('Cozinhar');
+
+    //Ex8
+    function addSubtitle(color){
+        let sub = document.createElement('div')
+        let container = document.getElementsByClassName('my-tasks')[0]
+        sub.className = 'task'
+        sub.style.backgroundColor = color
+        container.appendChild(sub);
+    }
+
+    addSubtitle("pink");
