@@ -165,3 +165,23 @@ function createDaysOfTheWeek() {
     }
 
     select();
+
+    //Ex10
+    function colorDay(){
+        let list = document.getElementById('days').children
+        for(let day of list){
+            day.addEventListener('click', function(event){
+                let selected = document.getElementsByClassName('selected')[0]
+                let chosenColor = selected.style.backgroundColor
+                if(!event.target.classList.contains('colored')){
+                    event.target.style.color = chosenColor
+                    event.target.classList += ' colored'
+                }else{
+                    event.target.style.color = "rgb(119,119,119)"
+                    event.target.classList.remove('colored')
+                }
+            })
+        }
+    }
+
+    colorDay();
