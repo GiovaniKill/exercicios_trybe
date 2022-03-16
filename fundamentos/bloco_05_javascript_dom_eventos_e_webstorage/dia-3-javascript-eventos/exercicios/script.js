@@ -146,3 +146,22 @@ function createDaysOfTheWeek() {
     }
 
     addSubtitle("pink");
+
+    //Ex9
+    function select(){
+        let list = document.getElementsByClassName('my-tasks')[0].children
+        for(let icon of list){
+            if(icon.classList.contains('task')){
+                icon.addEventListener("click", function(event){
+                  if(icon.classList.contains('selected')){
+                    icon.classList.remove('selected')
+                  }else{
+                    event.target.className = "task selected"
+                  }
+                }
+
+            )}
+        }
+    }
+
+    select();
