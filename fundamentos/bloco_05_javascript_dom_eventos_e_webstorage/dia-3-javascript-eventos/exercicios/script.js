@@ -43,6 +43,31 @@ function createDaysOfTheWeek() {
       document.getElementsByClassName('buttons-container')[0].appendChild(button);  
   }
 
-  createHolidayButton('Feriados')
+  createHolidayButton('Feriados');
 
-  
+  //Ex3
+  function addHolidayEventListener(){
+      let button = document.getElementById('btn-holiday')
+      let status = false;
+      button.addEventListener('click', function(){
+          let list = document.getElementById('days').children
+          if(!status){
+            for(let day of list){
+                if(day.classList.contains('holiday')){
+                day.style.backgroundColor = "lightblue"
+                }
+            }
+            status = true;
+          }else{
+            for(let day of list){
+                if(day.classList.contains('holiday')){
+                day.style.backgroundColor = "rgb(238,238,238)"
+                }
+            }
+            status = false;
+          }
+          
+      })
+  }
+
+  addHolidayEventListener();
