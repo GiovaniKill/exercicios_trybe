@@ -71,3 +71,13 @@ function createDaysOfTheWeek() {
   }
 
   addHolidayEventListener();
+
+  //Ex4
+  function createFridayButton(string){
+    let button = document.createElement('button');
+    button.innerText = string
+    button.id = 'btn-friday'
+    document.getElementsByClassName('buttons-container')[0].appendChild(button);  
+}
+
+    createFridayButton('Sexta-feira');
