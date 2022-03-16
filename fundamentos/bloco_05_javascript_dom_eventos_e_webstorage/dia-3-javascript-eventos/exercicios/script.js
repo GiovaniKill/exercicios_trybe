@@ -108,3 +108,20 @@ function createDaysOfTheWeek() {
 }
 
     addFridayEventListener();
+
+    //Ex6
+    function addMonthDaysListener(){
+        let list = document.getElementById('days').children
+        for(let day of list){
+            day.addEventListener('mouseover', function(event){
+                event.target.style.transition = '0.2s'
+                event.target.style.fontSize = '25px'
+            })
+            day.addEventListener('mouseleave', function(event){
+                event.target.style.transition = '0.2s'
+                event.target.style.fontSize = '20px'
+            })
+        }
+    }  
+    
+    addMonthDaysListener();
