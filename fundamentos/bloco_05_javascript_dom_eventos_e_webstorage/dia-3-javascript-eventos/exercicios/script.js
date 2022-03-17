@@ -187,6 +187,7 @@ function createDaysOfTheWeek() {
     colorDay();
 
     //Ex Bônus
+
     function addAppointment(){
         let input = document.getElementById('task-input')
         let button = document.getElementById('btn-add')
@@ -199,8 +200,24 @@ function createDaysOfTheWeek() {
             }else{
                 newAppointment.innerText = input.value
                 container.appendChild(newAppointment)
+                input.value = null;
             }
-        })  
+        })
     }
+
+    function onEnter(event){
+        let container = document.getElementsByClassName('task-list')[0]
+        let input = document.getElementById('task-input')
+        if(event.key == "Enter"){
+           let newAppointment = document.createElement('div')
+           if(input.value == ""){
+               alert('O compromisso deve conter um nome')
+           }else{
+               newAppointment.innerText = input.value
+               container.appendChild(newAppointment)
+               input.value = null;
+           }
+        }
+   } 
 
     addAppointment()
