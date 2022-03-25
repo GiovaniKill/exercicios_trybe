@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <title>Viagem</title>
+    </head>
+    <body>
+        <form action="" method="get">
+            <label for="nome">Insira seu nome:</label>
+            <input type="text" name="nome" id="nome" minlength="10" maxlength="40">
+            <label for="email">Insira seu e-mail:</label>
+            <input type="email" name="email" id="email" minlength="10" maxlength="50">
+            <p>Escolha seu destino preferido:</p>
+            <input type="radio" name="destino" value="cidade" id="cidade">
+            <label for="cidade">Cidade</label>
+            <input type="radio" name="destino" value="campo" id="campo">
+            <label for="campo">Campo</label>
+            <input type="radio" name="destino" value="praia" id="praia">
+            <label for="praia">Praia</label>
+            <input type="radio" name="destino" value="montanhas" id="montanhas">
+            <label for="montanhas">Montanhas</label>
+            <label for="texto"></label>
+            <textarea name="texto" id="texto" cols="30" rows="10" maxlength="500"></textarea>
+            <label for="data">Data:</label>
+            <input type="date" name="data" id="data">
+            <input type="checkbox" name="ofertas" id="ofertas">
+            <label for="ofertas">Gostaria de receber outras ofertas?</label>
+            <input type="checkbox" name="foto" id="foto">
+            <label for="foto">Autoriza-nos a utilizar suas fotos?</label>
+            <input type="file" id="enviar-foto">
+            <button type="submit" id="botao">Enviar</button>
+            <button type="reset" id="reset">Resetar</button>
+        </form>
+    </body>
+    <script src="script.js"></script>
+</html>
