@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Viagem</title>
+    </head>
+    <body>
+        <div div class="row">
+            <form action="" method="get" class="col s12">
+                <div div class="row">
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">account_circle</i>
+                        <label for="icon_prefix">Nome:</label>
+                        <input id="icon_prefix" type="text" class="validate">
+                    </div>
+                    <div class="input-field col s12">
+                      <input id="email" type="email" class="validate">
+                      <label for="email">Email</label>
+                      <span class="helper-text" data-error="Insira um endereço de e-mail válido" data-success="right">Insira seu enderaço de e-mail</span>
+                    </div>
+                </div>
+                    </form>
+                  </div>
+                <p>Escolha seu destino preferido:</p>
+                <input type="radio" name="destino" value="cidade" id="cidade">
+                <label for="cidade">Cidade</label>
+                <input type="radio" name="destino" value="campo" id="campo">
+                <label for="campo">Campo</label>
+                <input type="radio" name="destino" value="praia" id="praia">
+                <label for="praia">Praia</label>
+                <input type="radio" name="destino" value="montanhas" id="montanhas">
+                <label for="montanhas">Montanhas</label>
+
+                <label for="texto"></label>
+                <textarea name="texto" id="texto" cols="30" rows="10" maxlength="500"></textarea>
+
+                <label for="data">Data:</label>
+                <input type="date" name="data" id="data">
+
+                <input type="checkbox" name="ofertas" id="ofertas">
+                <label for="ofertas">Gostaria de receber outras ofertas?</label>
+
+                <input type="checkbox" name="foto" id="foto">
+                <label for="foto">Autoriza-nos a utilizar suas fotos?</label>
+
+                <input type="file" id="enviar-foto">
+
+                <button type="submit" id="botao">Enviar</button>
+
+                <button type="reset" id="reset">Resetar</button>
+            </form>
+        </div>
+    </body>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="script.js"></script>
+</html>
